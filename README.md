@@ -25,3 +25,12 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 # Project Descriptions
 1. Data Collection, training.csv
 2. Data Investigation
+3. Data Visualisation and Exploration
+4. Split the training.csv data for train and test model
+5. Feature Engineering
+6. Train the model
+7. Train the model
+8. Train the model
+9. Compare the model
+10. Test the best model
+11. Verify the best model with hold out test data
