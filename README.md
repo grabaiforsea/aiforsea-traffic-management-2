@@ -66,7 +66,7 @@ conda install -c anaconda py-xgboost
 
 <!-- GETTING STARTED -->
 ## Getting Started
-1. Data Collection, click [here] to get the data. (https://s3-ap-southeast-1.amazonaws.com/grab-aiforsea-dataset/traffic-management.zip)
+1. Data Collection, click [here] to get the data.(https://s3-ap-southeast-1.amazonaws.com/grab-aiforsea-dataset/traffic-management.zip)
 2. Data Investigation
 3. Data Visualisation and Exploration
 4. Split the training.csv data for train and test model
