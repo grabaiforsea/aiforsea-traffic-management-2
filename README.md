@@ -36,13 +36,6 @@ Economies in Southeast Asia are turning to AI to solve traffic congestion, which
 
 Can we accurately forecast travel demand based on historical Grab bookings to predict areas and times with high travel demand?
 
-The given dataset contains normalised historical demand of a city, aggregated spatiotemporally within geohashes and over 15 minute intervals. The dataset span over a two month period. A brief description of data set fields are found below:
-
-*geohash: geohash level 6
-*day: day, where the value indicates the sequential order and not a particular day of the month
-*timestamp: start time of 15-minute intervals, in the following format: hour and minute, where hour range from 0 to 23 and minute is either one of (0,15,30,45)
-*demand: aggregate demand normalised to be in the range [0,1]
-
 ### Objective
 To build a model trained on a historical demand dataset, that can forecast demand on a Hold-out test dataset. The model should be able to accurately forecast ahead by T+1 and T+5 time intervals (where each interval is 15-min) given all data up to time T.
 
@@ -65,6 +58,13 @@ conda install -c anaconda py-xgboost
 
 <!-- GETTING STARTED -->
 ## Getting Started
+The given dataset contains normalised historical demand of a city, aggregated spatiotemporally within geohashes and over 15 minute intervals. The dataset span over a two month period. A brief description of data set fields are found below:
+
+* geohash: geohash level 6
+* day: day, where the value indicates the sequential order and not a particular day of the month
+* timestamp: start time of 15-minute intervals, in the following format: hour and minute, where hour range from 0 to 23 and minute is either one of (0,15,30,45)
+* demand: aggregate demand normalised to be in the range [0,1]
+
 1. Getting the data, click [here](https://s3-ap-southeast-1.amazonaws.com/grab-aiforsea-dataset/traffic-management.zip) to get the data.
 2. Data Investigation
 3. Data Visualisation and Exploration
