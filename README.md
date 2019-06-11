@@ -82,7 +82,9 @@ conda install -c anaconda py-xgboost
 ## Contact
 
 Teng Chun Man - [@linkedin](https://www.linkedin.com/in/tengchunman/)
+
 Email: tengchunman@gmail.com
+
 Project Link: [https://github.com/cmxteng/aiforsea-traffic-management](https://github.com/cmxteng/aiforsea-traffic-management)
 
 
