@@ -17,7 +17,7 @@ ___
 ### Table of Contents
 
 * [Grab Challenge](#Grab-Challenge)
-  * [PROBLEM STATEMENT](#Problem-Statement)
+  * [Problem Statement](#Problem-Statement)
   * [Objective](#Objective)
   * [Built With](#built-with)
 * [Prerequisites](#prerequisites)
