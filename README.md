@@ -49,7 +49,7 @@ To build a model trained on a historical demand dataset, that can forecast deman
 ### Built With
 * [Anaconda](https://www.anaconda.com/)
 * [Jupyter Notebook](https://jupyter.org/)
-
+* [Spyder](https://www.spyder-ide.org/)
 
 <!-- Prerequisites -->
 ## Prerequisites
