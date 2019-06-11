@@ -14,7 +14,7 @@ ___
 ___
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+### Table of Contents
 
 * [Grab Challenge](#Grab-Challenge)
   * [PROBLEM STATEMENT](#Problem-Statement)
