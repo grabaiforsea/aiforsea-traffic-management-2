@@ -11,10 +11,13 @@ ___
   </a>
 </p>
 ___
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
+* [Grab Challenge](#Grab Challenge)
+  * [PROBLEM STATEMENT](#PROBLEM STATEMENT)
+  * [Objective](#Objective)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -25,9 +28,9 @@ ___
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+<!-- ABOUT THE PROJECT -->
 # Grab Challenge
-
-## Traffic Management
+### Traffic Management
 How may we improve the traffic congestion for Southeast Asia's roads by leveraging Grab's booking demand data? This is a data science assignment where you are expected to create a data model from a given training dataset.
 
 ### PROBLEM STATEMENT
@@ -42,7 +45,13 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 *timestamp: start time of 15-minute intervals, in the following format: hour and minute, where hour range from 0 to 23 and minute is either one of (0,15,30,45)
 *demand: aggregate demand normalised to be in the range [0,1]
 
-**Objective: To build a model trained on a historical demand dataset, that can forecast demand on a Hold-out test dataset. The model should be able to accurately forecast ahead by T+1 and T+5 time intervals (where each interval is 15-min) given all data up to time T.**
+### Objective
+To build a model trained on a historical demand dataset, that can forecast demand on a Hold-out test dataset. The model should be able to accurately forecast ahead by T+1 and T+5 time intervals (where each interval is 15-min) given all data up to time T.
+
+### Built With
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [Anaconda](https://www.anaconda.com/)
+* [Jupyter Notebook](https://jupyter.org/)
 
 # Project Descriptions
 1. Data Collection, training.csv
@@ -60,8 +69,8 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://www.linkedin.com/in/tengchunman/) - tengchunman@gmail.com
-
+Teng Chun Man - [@linkedin](https://www.linkedin.com/in/tengchunman/)
+Email: tengchunman@gmail.com
 Project Link: [https://github.com/cmxteng/aiforsea-traffic-management](https://github.com/cmxteng/aiforsea-traffic-management)
 
 <!-- ACKNOWLEDGEMENTS -->
