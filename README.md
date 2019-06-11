@@ -22,10 +22,6 @@ ___
   * [Built With](#built-with)
 * [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
