@@ -1,3 +1,4 @@
+___
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -9,11 +10,20 @@
     <img alt="Traffic Management" src="https://static.wixstatic.com/media/397bed_5d7ca71009b54dcf895b447920495d40~mv2.png/v1/fill/w_305,h_305,al_c,q_80,usm_0.66_1.00_0.01/Grab%20EDM_Safety.webp">
   </a>
 </p>
-
 ___
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-<a href='https://www.aiforsea.com/'># GRAB CHALLENGE</a>
-___
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
 # Grab Challenge
 
@@ -47,6 +57,17 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 10. Test the best model
 11. Verify the best model with hold out test data
 
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@your_twitter](https://www.linkedin.com/in/tengchunman/) - tengchunman@gmail.com
+
+Project Link: [https://github.com/cmxteng/aiforsea-traffic-management](https://github.com/cmxteng/aiforsea-traffic-management)
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [GitHub Pages](https://pages.github.com)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
