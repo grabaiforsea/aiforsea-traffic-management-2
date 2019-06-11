@@ -22,6 +22,12 @@ ___
   * [Built With](#built-with)
 * [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
+  * [Data Preparation](#Data-Preparation)
+  * [Data Visualisation](#Data-Visualisation)
+  * [Feature Engineering](#Feature-Engineering)
+* [Train Model](#Train-model)
+* [Model Comparison](#Model-Comparison)
+* [Best Model](#Best-Model)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
