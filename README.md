@@ -20,8 +20,8 @@ ___
   * [PROBLEM STATEMENT](#Problem-Statement)
   * [Objective](#Objective)
   * [Built With](#built-with)
+* [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
@@ -30,11 +30,11 @@ ___
 * [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
-# Grab Challenge
+## Grab Challenge
 ### Traffic Management
 How may we improve the traffic congestion for Southeast Asia's roads by leveraging Grab's booking demand data? This is a data science assignment where you are expected to create a data model from a given training dataset.
 
-### PROBLEM STATEMENT
+### Problem Statement
 Economies in Southeast Asia are turning to AI to solve traffic congestion, which hinders mobility and economic growth. The first step in the push towards alleviating traffic congestion is to understand travel demand and travel patterns within the city.
 
 Can we accurately forecast travel demand based on historical Grab bookings to predict areas and times with high travel demand?
@@ -50,11 +50,22 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 To build a model trained on a historical demand dataset, that can forecast demand on a Hold-out test dataset. The model should be able to accurately forecast ahead by T+1 and T+5 time intervals (where each interval is 15-min) given all data up to time T.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Anaconda](https://www.anaconda.com/)
 * [Jupyter Notebook](https://jupyter.org/)
 
-# Project Descriptions
+<!-- Prerequisites -->
+## Prerequisites
+* geohash
+```sh
+pip install python-geohash
+```
+* xgboost
+```sh
+conda install -c anaconda py-xgboost
+```
+
+<!-- GETTING STARTED -->
+## Getting Started
 1. Data Collection, training.csv
 2. Data Investigation
 3. Data Visualisation and Exploration
@@ -66,6 +77,11 @@ This section should list any major frameworks that you built your project using.
 9. Compare the model
 10. Test the best model
 11. Verify the best model with hold out test data
+
+### Prerequisites
+
+### Installation
+
 
 <!-- CONTACT -->
 ## Contact
