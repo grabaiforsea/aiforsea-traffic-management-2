@@ -21,3 +21,7 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 *demand: aggregate demand normalised to be in the range [0,1]
 
 **Objective: To build a model trained on a historical demand dataset, that can forecast demand on a Hold-out test dataset. The model should be able to accurately forecast ahead by T+1 and T+5 time intervals (where each interval is 15-min) given all data up to time T.**
+
+# Project Descriptions
+1. Data Collection, training.csv
+2. Data Investigation
