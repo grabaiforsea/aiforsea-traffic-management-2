@@ -25,6 +25,7 @@ ___
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+
 <!-- ABOUT THE PROJECT -->
 ## Grab Challenge
 ### Traffic Management
@@ -49,6 +50,7 @@ To build a model trained on a historical demand dataset, that can forecast deman
 * [Anaconda](https://www.anaconda.com/)
 * [Jupyter Notebook](https://jupyter.org/)
 
+
 <!-- Prerequisites -->
 ## Prerequisites
 * geohash
@@ -59,6 +61,7 @@ pip install python-geohash
 ```sh
 conda install -c anaconda py-xgboost
 ```
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -74,12 +77,14 @@ conda install -c anaconda py-xgboost
 10. Test the best model
 11. Verify the best model with hold out test data
 
+
 <!-- CONTACT -->
 ## Contact
 
 Teng Chun Man - [@linkedin](https://www.linkedin.com/in/tengchunman/)
 Email: tengchunman@gmail.com
 Project Link: [https://github.com/cmxteng/aiforsea-traffic-management](https://github.com/cmxteng/aiforsea-traffic-management)
+
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
