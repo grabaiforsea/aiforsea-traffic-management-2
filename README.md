@@ -2,7 +2,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 ___
 
-<h2 align="center">AI for S.E.A.</h2><a href="https://www.aiforsea.com/"></a>
+<a href="https://www.aiforsea.com/"><h2 align="center">AI for S.E.A.</h2></a>
 <p align="center">
   :bar_chart: How may we improve the traffic congestion for Southeast Asia's roads by leveraging Grab's booking demand data? <strong>Traffic Management</strong>
   <br><br>
