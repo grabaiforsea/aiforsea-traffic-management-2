@@ -24,7 +24,7 @@ ___
 * [Getting Started](#getting-started)
   * [Data Preparation](#Data-Preparation)
 * [Feature Engineering](#Feature-Engineering)
-* [Data Visualization](#Data-Visualization)
+* [Data Visualization and Exploration](#Data-Visualization-and-Exploration)
 * [Train the Regression Model](#Train-the-Regression-Model)
 * [Model Comparison](#Model-Comparison)
 * [Best Model](#Best-Model)
@@ -94,10 +94,10 @@ abbreviation:
 ### Data Preparation
 1. Getting the data, click [here](https://s3-ap-southeast-1.amazonaws.com/grab-aiforsea-dataset/traffic-management.zip) to get the data.
 2. Data Investigation.
-  * Print and view the data to check for potential feature and label.
-  * Check the quality of data including find missing value in data.
-  * Investigate the data type such as float, int, string, etc.
-  * Examine the class label, categorical or numerical.  
+    * Print and view the data to check for potential feature and label.
+    * Check the quality of data including find missing value in data.
+    * Investigate the data type such as float, int, string, etc.
+    * Examine the class label, categorical or numerical.  
 
 <!-- FEATURE ENGINEERING -->
 ## Feature Engineering
