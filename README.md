@@ -32,6 +32,7 @@ ___
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+___
 
 <!-- ABOUT THE PROJECT -->
 ## Grab Challenge
@@ -51,6 +52,7 @@ To build a model trained on a historical demand dataset, that can forecast deman
 * [Jupyter Notebook](https://jupyter.org/)
 * [Spyder](https://www.spyder-ide.org/)
 * [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb)
+___
 
 <!-- Prerequisites -->
 ## Prerequisites
@@ -67,6 +69,8 @@ or
 pip install xgboost
 ```
 
+___
+
 <!-- GETTING STARTED -->
 ## Getting Started
 The given dataset contains normalised historical demand of a city, aggregated spatiotemporally within geohashes and over 15 minute intervals. The dataset span over a two month period. A brief description of data set fields are found below:
@@ -82,7 +86,7 @@ What will I do to the data?
 3. Geohash6 is encoded. Should I decode to latitude and longitude?
 4. Demand column is in normalized. [0,1] 
 
-abbreviation:
+Abbreviation:
 * Explained Variance, EV.
 * Mean Absolute Error, MAE.
 * Mean Squared Error, MSE.
@@ -99,6 +103,8 @@ abbreviation:
     * Investigate the data type such as float, int, string, etc.
     * Examine the class label, categorical or numerical.  
 
+___
+
 <!-- FEATURE ENGINEERING -->
 ## Feature Engineering
 1. Deciding what features to create.
@@ -107,15 +113,17 @@ abbreviation:
 4. Cleaning the data.
 5. Adjust the day and timestamp to ascending order for viewing purpose.
 6. Split the data into 3 types for training, testing and hold out set for verification. Hold out dataset is using day 61 data while training and testing is using day 1 to day 60.
-  * Training dataset
-  * Testing dataset
-  * Hold out dataset
+    * Training dataset
+    * Testing dataset
+    * Hold out dataset
 6. Create features.
 7. Check how the features work with the model.
 8. Improving the features created.
 9. Go back to deciding more features until the work is done if necessary.
 
 Click [Training, testing, hold out dataset](/export.ipynb) for quick view on the data splitting code.
+
+___
 
 <!-- DATA VISUALIZATION -->
 ## Data Visualization and Exploration
@@ -124,19 +132,23 @@ Click [Training, testing, hold out dataset](/export.ipynb) for quick view on the
 
 Click [complete code](/traffic_complete.ipynb) to find the Data Visualization and Exploration, this will link you to the complete codebase.
 
+___
+
 <!-- TRAINING -->
 ## Train the regression model
 The demand is a continuous variable, therefore regression model is selected.
 The regression models that I have chosen to test are:
-* Decision Tree
-* Random Forest
-* Xgboost
+  * Decision Tree
+  * Random Forest
+  * Xgboost
 
 Each of the regression models has been validate with cross validate method and train with the best parameters using grid search cross validation method to find the best model at the end.
 
 The results of the three models will show in the Model Comparison section.
 
 Click [Training and Testing](/train_test.ipynb) for quick view on the training and testing model.
+
+___
 
 <!-- MODEL COMPARISON -->
 ## Model Comparison
@@ -148,6 +160,8 @@ Click [Training and Testing](/train_test.ipynb) for quick view on the training a
 
 XXX Elaboration XXX
 
+___
+
 <!-- BEST MODEL -->
 ## Best Model
 The best model is trained and tested with cross validation method. The best parameter is determined by the grid search method.
@@ -157,10 +171,13 @@ Based on the cross validation and prediction, Xgboost shows lower rmse and there
 
 Click [Perform](/perform.ipynb) for a quick prediction on your hold out dataset to Xgboost model.
 
+___
+
 <!-- COMPLETE DATA SCIENCE MODEL -->
 ## Complete Data Science Model
 Click [complete codebase](/traffic_complete) for a complete view of my code from getting start to the end, best model.
 
+___
 
 <!-- CONTACT -->
 ## Contact
@@ -171,6 +188,7 @@ Email: tengchunman@gmail.com
 
 Project Link: [https://github.com/cmxteng/aiforsea-traffic-management](https://github.com/cmxteng/aiforsea-traffic-management)
 
+___
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
