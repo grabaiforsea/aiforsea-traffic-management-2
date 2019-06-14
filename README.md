@@ -91,7 +91,7 @@ abbreviation:
 * Grid search cross validation, GSCV.
 
 <!-- DATA PREP -->
-###Data Preparation
+### Data Preparation
 1. Getting the data, click [here](https://s3-ap-southeast-1.amazonaws.com/grab-aiforsea-dataset/traffic-management.zip) to get the data.
 2. Data Investigation.
   * Print and view the data to check for potential feature and label.
@@ -100,7 +100,7 @@ abbreviation:
   * Examine the class label, categorical or numerical.  
 
 <!-- FEATURE ENGINEERING -->
-##Feature Engineering
+## Feature Engineering
 1. Deciding what features to create.
 2. Decode geohash6 into readable format, float.
 3. Convert the timestamp into readble format, float.
@@ -118,7 +118,7 @@ abbreviation:
 Click [Training, testing, hold out dataset](/export.ipynb) for quick view on the data splitting code.
 
 <!-- DATA VISUALIZATION -->
-##Data Visualization and Exploration
+## Data Visualization and Exploration
 * Visualize the demand using histogram chart.
 * Explore the rest of the features and the demand.
 
@@ -139,16 +139,17 @@ The results of the three models will show in the Model Comparison section.
 Click [Training and Testing](/train_test.ipynb) for quick view on the training and testing model.
 
 <!-- MODEL COMPARISON -->
-##Model Comparison
-| Table          | Tree   | Forest | Xgboost |
+## Model Comparison
+
+| Model          | Tree   | Forest | Xgboost |
 |----------------|--------|--------|---------|
-| CV RMSE        |        |        |         |
-| Predicted RMSE |        |        |         |
+| CV RMSE        |  xx    |   xx   |  xxx    |
+| Predicted RMSE |  xx    |   xx   |  xxx    |
 
 XXX Elaboration XXX
 
 <!-- BEST MODEL -->
-##Best Model
+## Best Model
 The best model is trained and tested with cross validation method. The best parameter is determined by the grid search method.
 From the model comparison, the conclusion of the best model is xgboost. 
 xxx Cross Validation definition xxx
@@ -157,7 +158,7 @@ Based on the cross validation and prediction, Xgboost shows lower rmse and there
 Click [Perform](/perform.ipynb) for a quick prediction on your hold out dataset to Xgboost model.
 
 <!-- COMPLETE DATA SCIENCE MODEL -->
-##Complete Data Science Model
+## Complete Data Science Model
 Click [complete codebase](/traffic_complete) for a complete view of my code from getting start to the end, best model.
 
 
