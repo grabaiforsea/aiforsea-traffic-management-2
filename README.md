@@ -122,12 +122,12 @@ ___
 5. Adjust the day and timestamp to ascending order for viewing purpose.
 6. Training data is split and categorized into two :
     1. Split the data into 3 types for training, testing and hold out set for verification. Training and testing is using day 1 to day 60 data. Hold out dataset is using day 61 data.
-      * Training dataset
-      * Testing dataset
-      * Hold out dataset
+        * Training dataset
+        * Testing dataset
+        * Hold out dataset
     2. Split the training data into train and test (with all day included).
-      * Training dataset
-      * Testing dataset
+        * Training dataset
+        * Testing dataset
 6. Create features.
 7. Check how the features work with the model.
 8. Improving the features created.
