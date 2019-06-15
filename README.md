@@ -54,6 +54,14 @@ To build a model trained on a historical demand dataset, that can forecast deman
 * [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb)
 ___
 
+<!-- Quick Link -->
+## Quick Link
+* [Export train test data](/github/x.ipynb) is quick split of train and test data, it can include day 61 only data.
+* [Complete code documentation](/github/x.ipynb) is the documentation of the complete code with all models.
+* [Complete codebase](/github/x.ipynb) is the code only **XGBoost AI model for this challenge**.
+
+___
+
 <!-- Prerequisites -->
 ## Prerequisites
 * geohash
@@ -80,11 +88,11 @@ The given dataset contains normalised historical demand of a city, aggregated sp
 * timestamp: start time of 15-minute intervals, in the following format: hour and minute, where hour range from 0 to 23 and minute is either one of (0,15,30,45)
 * demand: aggregate demand normalised to be in the range [0,1]
 
-What will I do to the data?
+What to do?
 1. Day column is from day 1 to day 61. Do I need to split a day for testing?
 2. Timestamp type is object/time format. Convert to float number?
 3. Geohash6 is encoded. Should I decode to latitude and longitude?
-4. Demand column is in normalized. [0,1] 
+4. Demand column is in normalized. [0,1]
 
 Abbreviation:
 * Explained Variance, EV.
@@ -112,10 +120,14 @@ ___
 3. Convert the timestamp into readble format, float.
 4. Cleaning the data.
 5. Adjust the day and timestamp to ascending order for viewing purpose.
-6. Split the data into 3 types for training, testing and hold out set for verification. Hold out dataset is using day 61 data while training and testing is using day 1 to day 60.
-    * Training dataset
-    * Testing dataset
-    * Hold out dataset
+6. Training data is split and categorized into two :
+    1. Split the data into 3 types for training, testing and hold out set for verification. Training and testing is using day 1 to day 60 data. Hold out dataset is using day 61 data.
+      * Training dataset
+      * Testing dataset
+      * Hold out dataset
+    2. Split the training data into train and test (with all day included).
+      * Training dataset
+      * Testing dataset
 6. Create features.
 7. Check how the features work with the model.
 8. Improving the features created.
@@ -136,8 +148,8 @@ ___
 
 <!-- TRAINING -->
 ## Train the regression model
-The demand is a continuous variable, therefore regression model is selected.
-The regression models that I have chosen to test are:
+The demand column is a continuous variable, hence regression model is selected.
+The regression models that I have chosen are:
   * Decision Tree
   * Random Forest
   * Xgboost
