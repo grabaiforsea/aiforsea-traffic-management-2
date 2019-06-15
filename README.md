@@ -121,7 +121,7 @@ ___
 8. Improving the features created.
 9. Go back to deciding more features until the work is done if necessary.
 
-Click [Training, testing, hold out dataset](/export.ipynb) for quick view on the data splitting code.
+Click [Training, testing, hold out dataset](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) for quick view on the data splitting code.
 
 ___
 
