@@ -162,7 +162,9 @@ The regression models that I have chosen to test are:
   * Random Forest
   * Xgboost
 
-Each of the regression model will validate with cross validation method and train with the best parameters by using grid search cross validation method to find the best parameters of the models at the end. I will select one of these regression as the best model where the model has overcomes the underfitting and overfitting as low as possible.
+Each of the regression model will validate with cross validation method and train with the best parameters by using grid search cross validation method.
+
+I will select one of these regression as the best model where the model has overcomes the underfitting and overfitting as low as possible.
 
 Here are the [random forest and xgboost testing code](https://github.com/cmxteng/aiforsea-traffic-management/tree/master/quick_analyze) utilize the various train test data to verify my model.
 Random Forest model:
