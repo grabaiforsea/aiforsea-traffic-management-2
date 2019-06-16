@@ -254,7 +254,7 @@ The model comparison cosist of Random Forest and XGBoost. The comparison are CV 
 |Prediction RMSE:  | 0.0732                  | **0.0692**             |
 
 Both the random forest and XGBoost have low RMSE. XGBoost clearly has a better variance between train and predicted RMSE.
-Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both is high.
+Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are high.
 
 ___
 
