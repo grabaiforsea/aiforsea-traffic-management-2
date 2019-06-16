@@ -112,8 +112,8 @@ Abbreviation:
     * Print and view the data to check for potential feature and label.
     * Check the quality of data including find missing value in data.
     * Investigate the data type such as float, int, string, etc.
-    * Examine the class label, categorical or numerical.  
-
+    * Examine the class label, categorical or numerical.
+    
 ___
 
 <!-- FEATURE ENGINEERING -->
@@ -144,6 +144,9 @@ Here are the train test data I have split to verfiy my model:
 5. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
 6. Training data splits into train data (first 47 days) and test data (last 14 days).
 7. Training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+
+Click [download](https://drive.google.com/drive/folders/1gyX9y_rDYoYOeynEVdXKhlMkI5KfcTaH?usp=sharing) to get the data above in csv format in my google drive.
+
 ___
 
 <!-- DATA VISUALIZATION -->
