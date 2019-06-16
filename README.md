@@ -56,7 +56,7 @@ ___
 
 <!-- Quick Link -->
 ## Quick Link
-* [Export train test data](/github/x.ipynb) is quick split of train and test data, it can include day 61 only data.
+* [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) is quick split of train and test data, it can include day 61 only data.
 * [Complete code documentation](/github/x.ipynb) is the documentation of the complete code with all models.
 * [Complete codebase](/github/x.ipynb) is the code only **XGBoost AI model for this challenge**.
 
