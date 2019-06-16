@@ -25,6 +25,7 @@ ___
 * [Getting Started](#getting-started)
   * [Data Preparation](#Data-Preparation)
 * [Feature Engineering](#Feature-Engineering)
+  * [Train Test Data](#Train-Test-Data)
 * [Data Visualization and Exploration](#Data-Visualization-and-Exploration)
 * [Train the Regression Model](#Train-the-Regression-Model)
 * [Model Comparison](#Model-Comparison)
@@ -121,21 +122,27 @@ ___
 3. Convert the timestamp into readble format, float.
 4. Cleaning the data.
 5. Adjust the day and timestamp to ascending order for viewing purpose.
-6. Training data is split and categorized into two :
-    1. Split the data into 3 types for training, testing and hold out set for verification. Training and testing is using day 1 to day 60 data. Hold out dataset is using day 61 data.
-        * Training dataset
-        * Testing dataset
-        * Hold out dataset
-    2. Split the training data into train and test (with all day included).
-        * Training dataset
-        * Testing dataset
-6. Create features.
-7. Check how the features work with the model.
-8. Improving the features created.
-9. Go back to deciding more features until the work is done if necessary.
+6. Split the training data into train dataset and test dataset.
+7. Create features.
+8. Check how the features work with the model.
+9. Improving the features created.
+10. Go back to deciding more features until the work is done if necessary.
 
-Click [Training, testing, hold out dataset](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) for quick view on the data splitting code.
+Click [data split](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) for quick view on the data splitting code.
 
+<!-- TRAIN TEST DATA -->
+### Train Test Data
+The train and test dataset I used to train my model to find the best parameter is:
+* training data splits into 75% train and 25% test
+
+Here are the train test data I have split to verfiy my model:
+1. Training data splits into 80% train and 20% test.
+2. Training data splits into train data (first 60 days) and test data (day 61).
+3. Training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0).
+4. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+5. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+6. Training data splits into train data (first 47 days) and test data (last 14 days).
+7. Training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
 ___
 
 <!-- DATA VISUALIZATION -->
@@ -150,12 +157,32 @@ ___
 <!-- TRAINING -->
 ## Train the regression model
 The demand column is a continuous variable, hence regression model is selected.
-The regression models that I have chosen are:
+The regression models that I have chosen to test are:
   * Decision Tree
   * Random Forest
   * Xgboost
 
-Each of the regression models has been validate with cross validate method and train with the best parameters using grid search cross validation method to find the best model at the end.
+Each of the regression model will validate with cross validation method and train with the best parameters by using grid search cross validation method to find the best parameters of the models at the end. I will select one of these regression as the best model where the model has overcomes the underfitting and overfitting as low as possible.
+
+Here are the [random forest and xgboost testing code](https://github.com/cmxteng/aiforsea-traffic-management/tree/master/quick_analyze) utilize the various train test data to verify my model.
+Random Forest model:
+1. forest_perform_train08_test02.ipynb - training data splits into 80% train and 20% test.
+2. rf_xgb_traintest60_holdout61.ipynb - training data splits into train data (first 60 days) and test data (day 61).
+3. forest_perform_test61_t0.ipynb - training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0).
+4. forest_perform_test61_t15.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+5. forest_perform_test61_t1145.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+6. forest_perform_train47_test14.ipynb - training data splits into train data (first 47 days) and test data (last 14 days).
+7. forest_perform_test61.ipynb - training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+
+XGBoost model:
+1. xgboost_perform_train08_test02.ipynb - training data splits into 80% train and 20% test.
+2. rf_xgb_traintest60_holdout61.ipynb - training data splits into train data (first 60 days) and test data (day 61).
+3. xgboost_perform_test61_t0.ipynb - training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0).
+4. xgboost_perform_test61_t15.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+5. xgboost_perform_test61_t1145.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+6. xgboost_perform_train47_test14.ipynb - training data splits into train data (first 47 days) and test data (last 14 days).
+7. xgboost_perform_test61.ipynb - training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+
 
 The results of the three models will show in the Model Comparison section.
 
@@ -185,7 +212,7 @@ XXX Elaboration XXX
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0735        | **0.0689**  |
 
-3. Training data split to train data(first 60 days) and test data (day 61 timestamp 0:0) 
+3. Training data split to train data (first 60 days) and test data (day 61 timestamp 0:0) 
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
@@ -214,7 +241,6 @@ XXX Elaboration XXX
 |Prediction RMSE:        | 0.0870        | **0.0799**  |
 
 7. Training data split to train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
-
 
 | Models                 | Random Forest (test) | **XGBoost** (test) |Random Forest (hold out) | **XGBoost** (hold out) |
 |------------------------|----------------------|--------------------|-------------------------|------------------------|
