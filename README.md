@@ -20,6 +20,7 @@ ___
   * [Problem Statement](#Problem-Statement)
   * [Objective](#Objective)
   * [Built With](#built-with)
+* [Quick Link to Code](#Quick-Link)  
 * [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
   * [Data Preparation](#Data-Preparation)
