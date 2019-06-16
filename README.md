@@ -58,8 +58,8 @@ ___
 <!-- Quick Link -->
 ## Quick Link
 * [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) is quick split of train and test data, it can include day 61 only data.
-* [Complete code documentation](/github/x.ipynb) is the documentation of the complete code with all models.
-* [Complete codebase](/github/x.ipynb) is the code only **XGBoost AI model for this challenge**.
+* [Complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) is the documentation of the complete code with all models.
+* [Complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) is quick analysis of my selected model code, **XGBoost AI model for this challenge**.
 
 ___
 
@@ -172,6 +172,54 @@ ___
 | Predicted RMSE |  xx    |   xx   |  xxx    |
 
 XXX Elaboration XXX
+
+| Models                 | Random Forest | **XGBoost** |
+|------------------------|---------------|-------------|
+|CV Train RMSE:          | 0.0330        | **0.0414**  |
+|Prediction RMSE:        | 0.0322        | **0.0413**  |
+
+2. Training data split to train data (first 60 days) and test data (day 61)
+
+| Models                 | Random Forest | **XGBoost** |
+|------------------------|---------------|-------------|
+|CV Train RMSE:          | 0.0312        | **0.0409**  |
+|Prediction RMSE:        | 0.0735        | **0.0689**  |
+
+3. Training data split to train data(first 60 days) and test data (day 61 timestamp 0:0) 
+
+| Models                 | Random Forest | **XGBoost** |
+|------------------------|---------------|-------------|
+|CV Train RMSE:          | 0.0312        | **0.0409**  |
+|Prediction RMSE:        | 0.0732        | **0.0708**  |
+
+4. Training data split to train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15)
+
+| Models                 | Random Forest | **XGBoost** |
+|------------------------|---------------|-------------|
+|CV Train RMSE:          | 0.0312        | **0.0409**  |
+|Prediction RMSE:        | 0.0740        | **0.0717**  |
+
+5. Training data split to train data (first 60 days) and test data (day 61, timestamp less than 12:00)
+
+| Models                 | Random Forest | **XGBoost** |
+|------------------------|---------------|-------------|
+|CV Train RMSE:          | 0.0312        | **0.0409**  |
+|Prediction RMSE:        | 0.0831        | **0.0768**  |
+
+6. Training data split to train data (first 47 days) and test data (last 14 days)
+
+| Models                 | Random Forest | **XGBoost** |
+|------------------------|---------------|-------------|
+|CV Train RMSE:          | 0.0308        | **0.0403**  |
+|Prediction RMSE:        | 0.0870        | **0.0799**  |
+
+7. Training data split to train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
+
+
+| Models                 | Random Forest (test) | **XGBoost** (test) |Random Forest (hold out) | **XGBoost** (hold out) |
+|------------------------|----------------------|--------------------|-------------------------|------------------------|
+|CV Train RMSE:          | 0.0741               | **0.0413**         | 0.0741                  | **0.0413**             |
+|Prediction RMSE:        | 0.0320               | **0.0410**         | 0.0732                  | **0.0692**             |
 
 ___
 
