@@ -29,7 +29,7 @@ ___
 * [Data Visualization and Exploration](#Data-Visualization-and-Exploration)
 * [Train the Regression Model](#Train-the-Regression-Model)
 * [Model Comparison](#Model-Comparison)
-* [Best Model](#Best-Model)
+* [Optimum Model](#Optimum-Model)
 * [Complete Data Science Model](#Complete-Data-Science-Model)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -196,6 +196,9 @@ ___
 
 <!-- MODEL COMPARISON -->
 ## Model Comparison
+The model comparison cosist of Random Forest and XGBoost. The comparison are CV Train RMSE and Prediction RMSE.
+* CV Train RMSE is the root mean square error of cross validation on train set.
+* Prediction RMSE is the root mean square error of prediction on test set.
 
 1. Training data splits into 80% train and 20% test 
 
@@ -241,18 +244,26 @@ ___
 
 7. Training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
 
-| Models                 | Random Forest (test) | **XGBoost** (test) |Random Forest (hold out) | **XGBoost** (hold out) |
-|------------------------|----------------------|--------------------|-------------------------|------------------------|
-|CV Train RMSE:          | 0.0741               | **0.0413**         | 0.0741                  | **0.0413**             |
-|Prediction RMSE:        | 0.0320               | **0.0410**         | 0.0732                  | **0.0692**             |
+| Models           | Random Forest (test) | **XGBoost** (test) |
+|------------------|----------------------|--------------------|
+|CV Train RMSE:    | 0.0741               | **0.0413**         |
+|Prediction RMSE:  | 0.0320               | **0.0410**         |
+
+| Models           |Random Forest (hold out) | **XGBoost** (hold out) |
+|------------------|-------------------------|------------------------|
+|CV Train RMSE:    | 0.0741                  | **0.0413**             |
+|Prediction RMSE:  | 0.0732                  | **0.0692**             |
+
+Both the random forest and XGBoost have low RMSE. XGBoost clearly has a better variance between train and predicted RMSE.
+Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both is high.
 
 ___
 
-<!-- BEST MODEL -->
-## Best Model
-The best model was trained and tested with cross validation method to avoid overfitting. The best parameter was determined by the grid search cross validation method.
+<!-- OPTIMUM MODEL -->
+## Optimum Model
+The optimum model was trained and tested with cross validation method to avoid overfitting and the best parameter was determined by the grid search cross validation method. 
 
-Based on the cross validation and prediction from the model comparison, Xgboost shows low RMSE and lowest distance difference between train and predicted RMSE. Therefore, the conclusion of the best model is XGBoost. An optimal balance of bias and variance would never overfit or underfit the model.
+Based on the cross validation and prediction from the model comparison, XGBoost shows low RMSE and lowest variance between train and predicted RMSE. Therefore, the conclusion for the optimum model is XGBoost. An optimal balance of bias and variance would never overfit or underfit the model.
 
 The bias is an error from erroneous assumptions in the learning algorithm. Model with high bias pays very little attention to the training data and oversimplifies the model. The variance is an error from sensitivity to small fluctuations in the training set. Model with high variance pays a lot of attention to training data and does not generalize on the data which it hasn’t seen before.
 
