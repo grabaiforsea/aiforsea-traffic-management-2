@@ -103,6 +103,7 @@ Abbreviation:
 * Root Mean Squared Error, RMSE.
 * Cross Validation, CV.
 * Grid search cross validation, GSCV.
+* Extreme Gradient Boosting, XGBoost.
 
 <!-- DATA PREP -->
 ### Data Preparation
@@ -196,54 +197,49 @@ ___
 <!-- MODEL COMPARISON -->
 ## Model Comparison
 
-| Model          | Tree   | Forest | Xgboost |
-|----------------|--------|--------|---------|
-| CV RMSE        |  xx    |   xx   |  xxx    |
-| Predicted RMSE |  xx    |   xx   |  xxx    |
-
-XXX Elaboration XXX
+1. Training data splits into 80% train and 20% test 
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0330        | **0.0414**  |
 |Prediction RMSE:        | 0.0322        | **0.0413**  |
 
-2. Training data split to train data (first 60 days) and test data (day 61)
+2. Training data splits into train data (first 60 days) and test data (day 61)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0735        | **0.0689**  |
 
-3. Training data split to train data (first 60 days) and test data (day 61 timestamp 0:0) 
+3. Training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0) 
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0732        | **0.0708**  |
 
-4. Training data split to train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15)
+4. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0740        | **0.0717**  |
 
-5. Training data split to train data (first 60 days) and test data (day 61, timestamp less than 12:00)
+5. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0831        | **0.0768**  |
 
-6. Training data split to train data (first 47 days) and test data (last 14 days)
+6. Training data splits into train data (first 47 days) and test data (last 14 days)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0308        | **0.0403**  |
 |Prediction RMSE:        | 0.0870        | **0.0799**  |
 
-7. Training data split to train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
+7. Training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
 
 | Models                 | Random Forest (test) | **XGBoost** (test) |Random Forest (hold out) | **XGBoost** (hold out) |
 |------------------------|----------------------|--------------------|-------------------------|------------------------|
@@ -254,18 +250,23 @@ ___
 
 <!-- BEST MODEL -->
 ## Best Model
-The best model is trained and tested with cross validation method. The best parameter is determined by the grid search method.
-From the model comparison, the conclusion of the best model is xgboost. 
-xxx Cross Validation definition xxx
-Based on the cross validation and prediction, Xgboost shows lower rmse and therefore suggested. 
+The best model was trained and tested with cross validation method to avoid overfitting. The best parameter was determined by the grid search cross validation method.
 
-Click [Perform](/perform.ipynb) for a quick prediction on your hold out dataset to Xgboost model.
+Based on the cross validation and prediction from the model comparison, Xgboost shows low RMSE and lowest distance difference between train and predicted RMSE. Therefore, the conclusion of the best model is XGBoost. An optimal balance of bias and variance would never overfit or underfit the model.
+
+The bias is an error from erroneous assumptions in the learning algorithm. Model with high bias pays very little attention to the training data and oversimplifies the model. The variance is an error from sensitivity to small fluctuations in the training set. Model with high variance pays a lot of attention to training data and does not generalize on the data which it hasn’t seen before.
+
+In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. Overfitting happens when our model captures the noise along with the underlying pattern in data.
+
+Click [Perform](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a quick prediction on your hold out dataset in **Xgboost model**.
 
 ___
 
 <!-- COMPLETE DATA SCIENCE MODEL -->
 ## Complete Data Science Model
-Click [complete codebase](/traffic_complete) for a complete view of my code from getting start to the end, best model.
+* Click [complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a complete test of my XGBoost model code.
+
+* Click [complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) for a quick view of my code documentation from getting start to the best model I obtained.
 
 ___
 
@@ -282,9 +283,9 @@ ___
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* 
-* 
-
+* [Understanding the Bias-Variance Tradeoff](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)
+* [Mean squared error](https://en.m.wikipedia.org/wiki/Mean_squared_error)
+* [XGBoost (python)](https://wuhuhu800.github.io/2018/02/28/XGboost_param_share/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
