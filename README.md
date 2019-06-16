@@ -60,7 +60,7 @@ ___
 ## Quick Link
 * [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) is quick split of train and test data, it can include day 61 only data.
 * [Complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) is the documentation of the complete code with all models.
-* [Complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) is quick analysis of my selected model code, **XGBoost AI model for this challenge**.
+* [Complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) is quick analysis of my selected model code, **XGBoost AI model for this challenge**. :point_left:
 
 ___
 
