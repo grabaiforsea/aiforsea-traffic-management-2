@@ -151,7 +151,7 @@ ___
 * Visualize the demand using histogram chart.
 * Explore the rest of the features and the demand.
 
-Click [complete code](/traffic_complete.ipynb) to find the Data Visualization and Exploration, this will link you to the complete codebase.
+Click [complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) to find the Data Visualization and Exploration.
 
 ___
 
@@ -187,10 +187,9 @@ XGBoost model:
 6. xgboost_perform_train47_test14.ipynb - training data splits into train data (first 47 days) and test data (last 14 days).
 7. xgboost_perform_test61.ipynb - training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
 
+The results will show in the Model Comparison section.
 
-The results of the three models will show in the Model Comparison section.
-
-Click [Training and Testing](/train_test.ipynb) for quick view on the training and testing model.
+Click [complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) for quick view on the process of selecting the optimum model.
 
 ___
 
