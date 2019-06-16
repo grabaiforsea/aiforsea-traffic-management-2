@@ -167,6 +167,7 @@ Each of the regression model will validate with cross validation method and trai
 I will select one of these regression as the best model where the model has overcomes the underfitting and overfitting as low as possible.
 
 Here are the [random forest and xgboost testing code](https://github.com/cmxteng/aiforsea-traffic-management/tree/master/quick_analyze) utilize the various train test data to verify my model.
+
 Random Forest model:
 1. forest_perform_train08_test02.ipynb - training data splits into 80% train and 20% test.
 2. rf_xgb_traintest60_holdout61.ipynb - training data splits into train data (first 60 days) and test data (day 61).
