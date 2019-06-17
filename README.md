@@ -29,7 +29,7 @@ ___
 * [Data Visualization and Exploration](#Data-Visualization-and-Exploration)
 * [Train the Regression Model](#Train-the-Regression-Model)
 * [Model Comparison](#Model-Comparison)
-* [Optimum Model](#Optimum-Model)
+* [The Optimum Model](#The-Optimum-Model)
 * [Complete Data Science Model](#Complete-Data-Science-Model)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -54,12 +54,15 @@ To build a model trained on a historical demand dataset, that can forecast deman
 * [Jupyter Notebook](https://jupyter.org/)
 * [Spyder](https://www.spyder-ide.org/)
 * [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb)
+
+**Submitted as Jupyter Notebook**
+
 ___
 
 <!-- Quick Link -->
 ## Quick Link
-* [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) is quick split of train and test data, it can include day 61 only data.
-* [Complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) is the documentation of the complete code with all models.
+* [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) is quick split of provided data into several types of input train test data.
+* [Complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) is the documentation of the complete code.
 * [Complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) is quick testing for the selected optimum model code, **XGBoost AI model for this challenge**. :point_left:
 
 ___
@@ -136,14 +139,14 @@ Click [data split](https://github.com/cmxteng/aiforsea-traffic-management/blob/m
 The train and test dataset I used to train my model to find the best parameter is:
 * training data splits into 75% train and 25% test
 
-Here are the train test data I have split to verfiy my model:
-1. Training data splits into 80% train and 20% test.
-2. Training data splits into train data (first 60 days) and test data (day 61).
-3. Training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0).
-4. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
-5. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
-6. Training data splits into train data (first 47 days) and test data (last 14 days).
-7. Training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+Here are the train test data that I have split to verfiy my model:
+1. 80% train and 20% test.
+2. Train data (first 60 days) and test data (day 61).
+3. Train data (first 60 days) and test data (day 61 timestamp 0:0).
+4. Train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+5. Train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+6. Train data (first 47 days) and test data (last 14 days).
+7. Train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
 
 Click [download](https://drive.google.com/drive/folders/1gyX9y_rDYoYOeynEVdXKhlMkI5KfcTaH?usp=sharing) to get the data above in csv format in my google drive.
 
@@ -168,27 +171,27 @@ The regression models that I have chosen to test are:
 
 Each of the regression model will validate with cross validation method and train with the best parameters by using grid search cross validation method.
 
-I will select one of these regression as the best model where the model has overcomes the underfitting and overfitting as low as possible.
+I will select one of these regression as the optimum model where the model has overcomes the underfitting and overfitting as low as possible.
 
-Here are the [random forest and xgboost testing code](https://github.com/cmxteng/aiforsea-traffic-management/tree/master/quick_analyze) utilize the various train test data to verify my model.
+Here are the [random forest and xgboost testing code](https://github.com/cmxteng/aiforsea-traffic-management/tree/master/quick_analyze) utilize the various train test input data to verify my model.
 
 Random Forest model:
-1. forest_perform_train08_test02.ipynb - training data splits into 80% train and 20% test.
-2. rf_xgb_traintest60_holdout61.ipynb - training data splits into train data (first 60 days) and test data (day 61).
-3. forest_perform_test61_t0.ipynb - training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0).
-4. forest_perform_test61_t15.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
-5. forest_perform_test61_t1145.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
-6. forest_perform_train47_test14.ipynb - training data splits into train data (first 47 days) and test data (last 14 days).
-7. forest_perform_test61.ipynb - training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+1. forest_perform_train08_test02.ipynb - 80% train and 20% test.
+2. rf_xgb_traintest60_holdout61.ipynb - train data (first 60 days) and test data (day 61).
+3. forest_perform_test61_t0.ipynb - train data (first 60 days) and test data (day 61 timestamp 0:0).
+4. forest_perform_test61_t15.ipynb - train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+5. forest_perform_test61_t1145.ipynb - train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+6. forest_perform_train47_test14.ipynb - train data (first 47 days) and test data (last 14 days).
+7. forest_perform_test61.ipynb - train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
 
 XGBoost model:
-1. xgboost_perform_train08_test02.ipynb - training data splits into 80% train and 20% test.
-2. rf_xgb_traintest60_holdout61.ipynb - training data splits into train data (first 60 days) and test data (day 61).
-3. xgboost_perform_test61_t0.ipynb - training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0).
-4. xgboost_perform_test61_t15.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
-5. xgboost_perform_test61_t1145.ipynb - training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00).
-6. xgboost_perform_train47_test14.ipynb - training data splits into train data (first 47 days) and test data (last 14 days).
-7. xgboost_perform_test61.ipynb - training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+1. xgboost_perform_train08_test02.ipynb - 80% train and 20% test.
+2. rf_xgb_traintest60_holdout61.ipynb - train data (first 60 days) and test data (day 61).
+3. xgboost_perform_test61_t0.ipynb - train data (first 60 days) and test data (day 61 timestamp 0:0).
+4. xgboost_perform_test61_t15.ipynb - train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+5. xgboost_perform_test61_t1145.ipynb - train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+6. xgboost_perform_train47_test14.ipynb - train data (first 47 days) and test data (last 14 days).
+7. xgboost_perform_test61.ipynb - train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
 
 The results will show in the Model Comparison section.
 
@@ -202,70 +205,77 @@ The model comparison cosist of Random Forest and XGBoost. The comparison are CV 
 * CV Train RMSE is the root mean square error of cross validation on train set.
 * Prediction RMSE is the root mean square error of prediction on test set.
 
-1. Training data splits into 80% train and 20% test 
+1. 80% train and 20% test.
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0330        | **0.0414**  |
 |Prediction RMSE:        | 0.0322        | **0.0413**  |
 
-2. Training data splits into train data (first 60 days) and test data (day 61)
+2. Train data (first 60 days) and test data (day 61).
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0735        | **0.0689**  |
 
-3. Training data splits into train data (first 60 days) and test data (day 61 timestamp 0:0) 
+3. Train data (first 60 days) and test data (day 61 timestamp 0:0).
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0732        | **0.0708**  |
 
-4. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15)
+4. Train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0740        | **0.0717**  |
 
-5. Training data splits into train data (first 60 days) and test data (day 61, timestamp less than 12:00)
+5. Train data (first 60 days) and test data (day 61, timestamp less than 12:00).
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0831        | **0.0768**  |
 
-6. Training data splits into train data (first 47 days) and test data (last 14 days)
+6. Train data (first 47 days) and test data (last 14 days).
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0308        | **0.0403**  |
 |Prediction RMSE:        | 0.0870        | **0.0799**  |
 
-7. Training data splits into train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
+7. Train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
 
-| Models           | Random Forest (test) | **XGBoost** (test) |
-|------------------|----------------------|--------------------|
-|CV Train RMSE:    | 0.0741               | **0.0413**         |
-|Prediction RMSE:  | 0.0320               | **0.0410**         |
+Train vs Test (first 60 days, 75% train, 25% test):
 
-| Models           |Random Forest (hold out) | **XGBoost** (hold out) |
-|------------------|-------------------------|------------------------|
-|CV Train RMSE:    | 0.0741                  | **0.0413**             |
-|Prediction RMSE:  | 0.0732                  | **0.0692**             |
+| Models           | Random Forest  | **XGBoost**  |
+|------------------|----------------|--------------|
+|CV Train RMSE:    | 0.0741         | **0.0413**   |
+|Prediction RMSE:  | 0.0320         | **0.0410**   |
 
-Both the random forest and XGBoost have low RMSE. XGBoost clearly has a better variance between train and predicted RMSE.
-Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are high.
+Train (first 60 days, 75% train) vs Hold Out (day 61 only):
+
+| Models           |Random Forest | **XGBoost** |
+|------------------|--------------|-------------|
+|CV Train RMSE:    | 0.0741       | **0.0413**  |
+|Prediction RMSE:  | 0.0732       | **0.0692**  |
+
+From the comparison, the data which split randomly to 75% train, 25% test and 80% train, 20% test are performing well resulted low RMSE value and low variance of train and predicted RMSE for both random forest and XGBoost models. 
+
+When there is a hold out dataset or a forecast data of day 61 with certain timestamp, the prediction of RMSE is increased and the variance of train and prediction RMSE also increased. Random forest model resulted in higher prediction RMSE as well as the variance of train and prediction RMSE compare to XGBoost.
+
+Both the random forest and XGBoost have low RMSE. Although random forest sometimes has lower prediction RMSE but XGBoost clearly has a better variance between train and predicted RMSE. Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are high.
 
 ___
 
 <!-- OPTIMUM MODEL -->
-## Optimum Model
+## The Optimum Model
 The optimum model was trained and tested with cross validation method to avoid overfitting and the best parameter was determined by the grid search cross validation method. 
 
-Based on the cross validation and prediction from the model comparison, XGBoost shows low RMSE and lowest variance between train and predicted RMSE. Therefore, the conclusion for the optimum model is XGBoost. An optimal balance of bias and variance would never overfit or underfit the model.
+An optimal balance of bias and variance would never overfit or underfit the model. Based on the cross validation and prediction from the model comparison, XGBoost shows low RMSE and lowest variance between train and predicted RMSE. Therefore, the conclusion for the optimum model is **XGBoost**. 
 
 The bias is an error from erroneous assumptions in the learning algorithm. Model with high bias pays very little attention to the training data and oversimplifies the model. The variance is an error from sensitivity to small fluctuations in the training set. Model with high variance pays a lot of attention to training data and does not generalize on the data which it hasn’t seen before.
 
