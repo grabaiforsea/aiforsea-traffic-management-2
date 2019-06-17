@@ -288,7 +288,7 @@ ___
 
 <!-- COMPLETE AI MODEL -->
 ## Complete AI Model
-* Click [complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a complete test of my XGBoost model code.
+* Click [complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a complete test of my XGBoost model code. :star:
 
 ___
 <!-- DOCUMENTATION -->
