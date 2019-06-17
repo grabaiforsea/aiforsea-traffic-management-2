@@ -61,7 +61,7 @@ ___
 
 <!-- Quick Link -->
 ## Quick Link
-* [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) is quick split of provided data into several types of input train test data.
+* [Export train test data](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/train_test_split/export_train_test_set.ipynb) is quick split of provided data into several types of input train test data.
 * [Complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) is the documentation of the complete code.
 * [Complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) is quick testing for the selected optimum model code, **XGBoost AI model for this challenge**. :point_left:
 
@@ -132,7 +132,7 @@ ___
 9. Improving the features created.
 10. Go back to deciding more features until the work is done if necessary.
 
-Click [data split](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/export_train_test_set.ipynb) for quick view on the data splitting code.
+Click [data split](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/train_test_split/export_train_test_set.ipynb) for quick view on the data splitting code.
 
 <!-- TRAIN TEST DATA -->
 ### Train Test Data
