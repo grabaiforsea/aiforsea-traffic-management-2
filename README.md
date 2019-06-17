@@ -267,7 +267,7 @@ From the comparison, the data which split randomly to 75% train, 25% test and 80
 
 When there is a hold out dataset or a forecast data of day 61 with certain timestamp, the prediction of RMSE is increased and the variance of train and prediction RMSE also increased. Random forest model resulted in higher prediction RMSE as well as the variance of train and prediction RMSE compare to XGBoost.
 
-Both the random forest and XGBoost have low RMSE. Although random forest sometimes has lower prediction RMSE but XGBoost clearly has a better variance between train and predicted RMSE. Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are higher than XGBoost.
+Both the random forest and XGBoost have low RMSE. Although random forest sometimes has lower train RMSE but most of the time random forest has high predicition RMSE. So, XGBoost clearly has a better variance between train and predicted RMSE. Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are higher than XGBoost.
 
 ___
 
