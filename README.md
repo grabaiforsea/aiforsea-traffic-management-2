@@ -31,6 +31,7 @@ ___
 * [Model Comparison](#Model-Comparison)
 * [The Optimum Model](#The-Optimum-Model)
 * [Complete AI Model](#Complete-AI-Model)
+* [Documentation](#Documentation)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -289,6 +290,9 @@ ___
 ## Complete AI Model
 * Click [complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a complete test of my XGBoost model code.
 
+___
+<!-- DOCUMENTATION -->
+## Documentation
 * Click [complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) for a quick view of my code documentation from getting start to the best model I obtained.
 
 ___
