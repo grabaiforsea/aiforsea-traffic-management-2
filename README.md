@@ -30,7 +30,7 @@ ___
 * [Train the Regression Model](#Train-the-Regression-Model)
 * [Model Comparison](#Model-Comparison)
 * [The Optimum Model](#The-Optimum-Model)
-* [Complete Data Science Model](#Complete-Data-Science-Model)
+* [Complete AI Model](#Complete-AI-Model)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -205,49 +205,49 @@ The model comparison cosist of Random Forest and XGBoost. The comparison are CV 
 * CV Train RMSE is the root mean square error of cross validation on train set.
 * Prediction RMSE is the root mean square error of prediction on test set.
 
-1. 80% train and 20% test.
+1. 80% train and 20% test 
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0330        | **0.0414**  |
 |Prediction RMSE:        | 0.0322        | **0.0413**  |
 
-2. Train data (first 60 days) and test data (day 61).
+2. Train data (first 60 days) and test data (day 61)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0735        | **0.0689**  |
 
-3. Train data (first 60 days) and test data (day 61 timestamp 0:0).
+3. Train data (first 60 days) and test data (day 61 timestamp 0:0) 
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0732        | **0.0708**  |
 
-4. Train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15).
+4. Train data (first 60 days) and test data (day 61, timestamp less than and equal to 0:15)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0740        | **0.0717**  |
 
-5. Train data (first 60 days) and test data (day 61, timestamp less than 12:00).
+5. Train data (first 60 days) and test data (day 61, timestamp less than 12:00)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0312        | **0.0409**  |
 |Prediction RMSE:        | 0.0831        | **0.0768**  |
 
-6. Train data (first 47 days) and test data (last 14 days).
+6. Train data (first 47 days) and test data (last 14 days)
 
 | Models                 | Random Forest | **XGBoost** |
 |------------------------|---------------|-------------|
 |CV Train RMSE:          | 0.0308        | **0.0403**  |
 |Prediction RMSE:        | 0.0870        | **0.0799**  |
 
-7. Train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61).
+7. Train data (first 60 days, 75%), test data (first 60 days, 25%) and hold out data (day 61)
 
 Train vs Test (first 60 days, 75% train, 25% test):
 
@@ -267,7 +267,7 @@ From the comparison, the data which split randomly to 75% train, 25% test and 80
 
 When there is a hold out dataset or a forecast data of day 61 with certain timestamp, the prediction of RMSE is increased and the variance of train and prediction RMSE also increased. Random forest model resulted in higher prediction RMSE as well as the variance of train and prediction RMSE compare to XGBoost.
 
-Both the random forest and XGBoost have low RMSE. Although random forest sometimes has lower prediction RMSE but XGBoost clearly has a better variance between train and predicted RMSE. Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are high.
+Both the random forest and XGBoost have low RMSE. Although random forest sometimes has lower prediction RMSE but XGBoost clearly has a better variance between train and predicted RMSE. Number 7 hold out example for random forest have very low variance between train and predicted RMSE but the RMSE value for both the train and predicted RMSE are higher than XGBoost.
 
 ___
 
@@ -281,12 +281,12 @@ The bias is an error from erroneous assumptions in the learning algorithm. Model
 
 In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. Overfitting happens when our model captures the noise along with the underlying pattern in data.
 
-Click [Perform](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a quick prediction on your hold out dataset in **Xgboost model**.
+Click [Perform](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a quick prediction on your hold out dataset in **Xgboost model**. - this will link to complete_codebase.ipynb
 
 ___
 
-<!-- COMPLETE DATA SCIENCE MODEL -->
-## Complete Data Science Model
+<!-- COMPLETE AI MODEL -->
+## Complete AI Model
 * Click [complete codebase](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a complete test of my XGBoost model code.
 
 * Click [complete code documentation](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_code_documentation.ipynb) for a quick view of my code documentation from getting start to the best model I obtained.
