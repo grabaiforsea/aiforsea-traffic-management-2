@@ -29,7 +29,7 @@ ___
 * [Data Visualization and Exploration](#Data-Visualization-and-Exploration)
 * [Train the Regression Model](#Train-the-Regression-Model)
 * [Model Comparison](#Model-Comparison)
-* [The Optimum Model](#The-Optimum-Model)
+* [My Model](#My-Model)
 * [Complete AI Model](#Complete-AI-Model)
 * [Documentation](#Documentation)
 * [Contact](#contact)
@@ -272,9 +272,9 @@ Both the random forest and XGBoost have low RMSE. Although random forest sometim
 
 ___
 
-<!-- OPTIMUM MODEL -->
-## The Optimum Model
-The optimum model was trained and tested with cross validation method to avoid overfitting and the best parameter was determined by the grid search cross validation method. 
+<!-- Best MODEL -->
+## My Model
+The model was trained and tested with cross validation method to avoid overfitting and the best parameter was determined by the grid search cross validation method. 
 
 An optimal balance of bias and variance would never overfit or underfit the model. Based on the cross validation and prediction from the model comparison, XGBoost shows low RMSE and lowest variance between train and predicted RMSE. Therefore, the conclusion for the optimum model is **XGBoost**. 
 
@@ -282,8 +282,10 @@ The bias is an error from erroneous assumptions in the learning algorithm. Model
 
 In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. Overfitting happens when our model captures the noise along with the underlying pattern in data.
 
-Click [Perform](https://github.com/cmxteng/aiforsea-traffic-management/blob/master/complete_codebase.ipynb) for a quick prediction on your hold out dataset in **Xgboost model**. - this will link to complete_codebase.ipynb
+The model can be further improve with different approaches. 
+For example, time series manner and deep learning such as LSTM.
 
+To be continue...
 ___
 
 <!-- COMPLETE AI MODEL -->
