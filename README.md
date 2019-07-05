@@ -282,8 +282,27 @@ The bias is an error from erroneous assumptions in the learning algorithm. Model
 
 In supervised learning, underfitting happens when a model unable to capture the underlying pattern of the data. Overfitting happens when our model captures the noise along with the underlying pattern in data.
 
+
+___
+## To be continue...
+
 The model can be further improve with different approaches. 
 For example, time series manner and deep learning such as LSTM.
+
+1. Analysis with Statmodels - ETS Decomposition, EWMA, Holt-Winters Method.
+* Find the Trend
+* Find the seasonal
+* Study the residual
+
+2. General Forecast Model - ACF and PACF plots, AutoRegression(AR), Descriptive Statistics and test, ARIMA, SARIMA, Vector AR
+* Choose model 
+* Use the split train test sets
+* Fit model on training set
+* Evaluate model on test set
+* Re-fit model on entire data set
+* Forecast for future data
+
+3. Deep Learning
 
 To be continue...
 ___
